@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ice
 
 > My lovely Nuxt.js project
@@ -20,3 +21,6 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+=======
+# ice
+>>>>>>> ffa20e9041b08e9c9fa6e9449197667f7b4f84cd
