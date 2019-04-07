@@ -4,8 +4,11 @@
   "description": "My lovely Nuxt.js project",
   "author": "“songkejiang”",
   "private": true,
+  "nuxt":{
+    "port": "3333"
+  },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon -w server -w ./start.js --exec node ./start.js",
+    "dev": "cross-env NODE_ENV=development PORT=3333 nodemon -w server -w ./start.js --exec node ./start.js",
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "nuxt generate"
