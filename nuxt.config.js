@@ -50,7 +50,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    publicPath: '/ice/_nuxt/',
+    // publicPath: '/ice/_nuxt/',
     extend(config, ctx) {
     }
   }
