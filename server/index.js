@@ -4,13 +4,12 @@ const { Nuxt, Builder } = require('nuxt')
 import R from 'ramda'
 import {resolve} from 'path'
 // Import and Set Nuxt.js options
-
 const r = path => resolve(__dirname, path)
 let config = require('../nuxt.config.js')
 const MIDDLEWARE = ['router']
 class Server {
   constructor(app) {
-    config.dev = !(process.env === 'production')
+    config.dev = !(process.env.NODE_ENV === 'production')
     this.app = new Koa() 
     this.useMiddleWare(this.app)(MIDDLEWARE)
   }
@@ -29,6 +28,7 @@ class Server {
     } = nuxt.options.server
   
     // Build in development
+    console.log('env', config.dev)
     if (config.dev) {
       const builder = new Builder(nuxt)
       await builder.build()
